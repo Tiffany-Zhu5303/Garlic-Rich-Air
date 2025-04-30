@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: '/your-repo-name', 
-    assetPrefix: '/your-repo-name/', 
+    basePath: '/garlic-rich-air', 
+    assetPrefix: '/garlic-rich-air', 
     trailingSlash: true,
   }
   
