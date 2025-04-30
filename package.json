@@ -2,7 +2,6 @@
   "name": "garlic-rich-air",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/Tiffany-Zhuit5303/Garlic-Rich-Air/",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
