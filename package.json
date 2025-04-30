@@ -1,13 +1,12 @@
 {
-  "name": "fiona-garlic-rich-air",
+  "name": "garlic-rich-air",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://github.com/Tiffany-Zhuit5303/Garlic-Rich-Air/",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
-    "export": "next build",
-    "deploy": "gh-pages -d out",
+    "deploy": "npm run build && gh-pages -d out",
     "lint": "next lint"
   },
   "dependencies": {
