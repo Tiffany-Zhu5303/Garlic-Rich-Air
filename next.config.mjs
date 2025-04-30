@@ -1,10 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'standalone',
-    output: 'export',
+    basePath: '/your-repo-name', 
+    assetPrefix: '/your-repo-name/', 
     trailingSlash: true,
-    basePath: '/garlic-rich-air', 
-    assetPrefix: '/garlic-rich-air',
-}
-
-export default nextConfig;
+  }
+  
+  export default nextConfig;
