@@ -24,11 +24,11 @@ export default function Home() {
           <Navbar />
           <div className="flex flex-col items-center justify-center screen-h-75">
             <h1 className="text-3xl font-bold uppercase">
-              “When [a crash] happens, 
+            &quot;When [a crash] happens, 
               <br></br>you invent your own 
               <br></br>currency locally. 
             </h1>
-            <h1 className="text-3xl font-bold uppercase italic"> Why not use garlic?"</h1>
+            <h1 className="text-3xl font-bold uppercase italic"> Why not use garlic?&quot;</h1>
             <h1 className="">— Shu Lea Cheang</h1>
 
             <div className="mb-10">
@@ -44,7 +44,7 @@ export default function Home() {
               In Cheang’s project, users signed up for the barter economy via a website where they could deposit digital goods to be exchanged for organic garlic, whose value was decided collectively by the community. Following a period of trading, Cheang created a virtual-to-physical exchange where virtual garlic could be traded for real bulbs.
               </p>
               <p>
-              This exchange was staged as a street performance based around a pick-up truck adorned with the slogan “GET GARLIC. GO WIRELESS.” Fitted with free wireless connectivity and carrying hundreds of pounds of freshly harvested garlic, the truck facilitated a lively barter-based micro-economy on the streets of New York in a “real-time fictional scenario” that prototyped strategies for community adaptation and exchange in the face of climate change and economic precarity.
+              This exchange was staged as a street performance based around a pick-up truck adorned with the slogan &quot;GET GARLIC. GO WIRELESS.&quot; Fitted with free wireless connectivity and carrying hundreds of pounds of freshly harvested garlic, the truck facilitated a lively barter-based micro-economy on the streets of New York in a &quot;real-time fictional scenario&quot; that prototyped strategies for community adaptation and exchange in the face of climate change and economic precarity.
               </p>
             </div>
           </div>
