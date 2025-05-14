@@ -61,16 +61,16 @@ export default function Home() {
               <span className="text-[#76583F]">garlic is gold.</span>
             </h1>
           </div>
-          <div className="w-full relative h-[100vh]">
+          <div className="w-full relative overflow-hidden h-[100vh]">
               <MyResponsiveNetwork data={data} />
-              <img className = "absolute top-150 left-100 w-[250px]" src = "/garlicbulb.png"/>
+              <img className = "absolute top-150 left-100  w-[250px]" src = "/garlicbulb.png"/>
               <img className = "absolute top-80 left-60 w-[250px]" src = "/garlicbulb.png"/>
               <img className = "absolute top-40 left-200 w-[250px]" src = "/garlicbulb.png"/>
               <img className = "absolute top-90 left-260 w-[250px]" src = "/garlicbulb.png"/>
               <img className = "absolute top-20 left-20 w-[250px]" src = "/garlicbulb.png"/>
               <img className = "absolute top-30 right-50 w-[250px]" src = "/garlicbulb.png"/>
             </div>
-            <div className="w-full p-20 bg-[#2B7180] flex flex-col justify-between relative h-[120vh]">
+            <div className="w-full p-20 bg-[#2B7180] overflow-hidden flex flex-col justify-between relative h-[120vh]">
                 <div>
                     <h1 className = "font-bold text-xl font-uppercase">Shu Lea Cheang's Garlic World</h1>
                     <p className = "w-[50%]">Welcome to Shu Lea Cheang's Garlic World! Where garlic heals, feeds, and fosters relationships. Garlic is your decentralized currency! Trade what you have, grow what you don't, and evolve beyond capitalism. Avoid hoarding as your garlic count will be capped.</p>
