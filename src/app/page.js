@@ -141,12 +141,6 @@ export default function Home() {
             />
 
             <House
-              className="absolute top-[500px] left-[900px]"
-              name="Luna's Cottage"
-              inventory={["2 Garlic Bulbs", "3 artworks", "2 wooden chairs"]}
-            />
-
-            <House
               className="absolute top-[200px] left-[200px]"
               name="Niko's Shelter"
               inventory={["0 Garlic Bulbs", "8 artworks", "Compost Bin"]}
