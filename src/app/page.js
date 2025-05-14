@@ -43,15 +43,13 @@ export default function Home() {
       { source: "garlic-futures", target: "open-source", distance: 330 },
       { source: "barter", target: "garlic-futures", distance: 310 },
       { source: "garlic-futures", target: "mesh-network", distance: 500 },
-    ]
+    ],
   };
-  
-  
 
   return (
     <div>
       {isLoading ? (
-        <LoadingScreen backgroundcolor={"bg-[#758A48]"}/>
+        <LoadingScreen backgroundcolor={"bg-[#758A48]"} />
       ) : (
         <div>
           <Navbar />
@@ -62,74 +60,146 @@ export default function Home() {
             </h1>
           </div>
           <div className="w-full relative overflow-hidden h-[100vh]">
-              <MyResponsiveNetwork data={data} />
-              <img className = "absolute top-150 left-100  w-[250px]" src = "/garlicbulb.png"/>
-              <img className = "absolute top-80 left-60 w-[250px]" src = "/garlicbulb.png"/>
-              <img className = "absolute top-40 left-200 w-[250px]" src = "/garlicbulb.png"/>
-              <img className = "absolute top-90 left-260 w-[250px]" src = "/garlicbulb.png"/>
-              <img className = "absolute top-20 left-20 w-[250px]" src = "/garlicbulb.png"/>
-              <img className = "absolute top-30 right-50 w-[250px]" src = "/garlicbulb.png"/>
+            <MyResponsiveNetwork data={data} />
+            <img
+              className="absolute top-150 left-100  w-[250px]"
+              src="/garlicbulb.png"
+            />
+            <img
+              className="absolute top-80 left-60 w-[250px]"
+              src="/garlicbulb.png"
+            />
+            <img
+              className="absolute top-40 left-200 w-[250px]"
+              src="/garlicbulb.png"
+            />
+            <img
+              className="absolute top-90 left-260 w-[250px]"
+              src="/garlicbulb.png"
+            />
+            <img
+              className="absolute top-20 left-20 w-[250px]"
+              src="/garlicbulb.png"
+            />
+            <img
+              className="absolute top-30 right-50 w-[250px]"
+              src="/garlicbulb.png"
+            />
+          </div>
+          <div className="w-full p-20 bg-[#2B7180] overflow-hidden flex flex-col justify-between relative h-[120vh]">
+            <div>
+              <h1 className="font-bold text-xl font-uppercase">
+                Shu Lea Cheang&apos;s Garlic World
+              </h1>
+              <p className="w-[50%]">
+                Welcome to Shu Lea Cheang&apos;s Garlic World! Where garlic
+                heals, feeds, and fosters relationships. Garlic is your
+                decentralized currency! Trade what you have, grow what you
+                don&apos;t, and evolve beyond capitalism. Avoid hoarding as your
+                garlic count will be capped.
+              </p>
             </div>
-            <div className="w-full p-20 bg-[#2B7180] overflow-hidden flex flex-col justify-between relative h-[120vh]">
-                <div>
-                    <h1 className = "font-bold text-xl font-uppercase">Shu Lea Cheang's Garlic World</h1>
-                    <p className = "w-[50%]">Welcome to Shu Lea Cheang's Garlic World! Where garlic heals, feeds, and fosters relationships. Garlic is your decentralized currency! Trade what you have, grow what you don't, and evolve beyond capitalism. Avoid hoarding as your garlic count will be capped.</p>
-                </div>
-                <form className = "flex justify-end flex-col gap-5 items-end">
-                    <p className = "w-[50%]" >Trade postings will be updated daily! Communicate with other traders, build relationships, and trade as you wish! Submit your postings below.</p>
-                    <input type = "text" className = "w-[50%] p-4 bg-white" placeholder="Housing Name"></input>
-                    <input type = "text" className = "w-[50%] p-4 bg-white" placeholder="Max of 3 categories of items for trade"></input>
-                    <input type = "text" className = "w-[50%] p-4 bg-white" placeholder="Contact Info (Ex: Phone Number, Address, Email)"></input>
-                    <button type = 'submit' className = "bg-[#899D5E] p-4">Enter</button>
-                </form>  
-                <House
-                    className="absolute top-[600px] left-[40px]"
-                    name="Fiona's House"
-                    inventory={["4 Garlic Bulbs", "Decentralized WiFi", "7 Corn"]}
-                    />
+            <form className="flex justify-end flex-col gap-5 items-end">
+              <p className="w-[50%]">
+                Trade postings will be updated daily! Communicate with other
+                traders, build relationships, and trade as you wish! Submit your
+                postings below.
+              </p>
+              <input
+                type="text"
+                className="w-[50%] p-4 bg-white"
+                placeholder="Housing Name"
+              ></input>
+              <input
+                type="text"
+                className="w-[50%] p-4 bg-white"
+                placeholder="Max of 3 categories of items for trade"
+              ></input>
+              <input
+                type="text"
+                className="w-[50%] p-4 bg-white"
+                placeholder="Contact Info (Ex: Phone Number, Address, Email)"
+              ></input>
+              <button type="submit" className="bg-[#899D5E] p-4">
+                Enter
+              </button>
+            </form>
+            <House
+              className="absolute top-[600px] left-[40px]"
+              name="Fiona's House"
+              inventory={["4 Garlic Bulbs", "Decentralized WiFi", "7 Corn"]}
+            />
 
-                    <House
-                    className="absolute top-[300px] left-[500px]"
-                    name="Alex's Den"
-                    inventory={["18 Garlic Bulbs", "Cultivation Patch", "3 gallons of water"]}
-                    />
+            <House
+              className="absolute top-[300px] left-[500px]"
+              name="Alex's Den"
+              inventory={[
+                "18 Garlic Bulbs",
+                "Cultivation Patch",
+                "3 gallons of water",
+              ]}
+            />
 
-                    <House
-                    className="absolute top-[500px] left-[900px]"
-                    name="Luna's Cottage"
-                    inventory={["2 Garlic Bulbs", "3 artworks", "2 wooden chairs"]}
-                    />
+            <House
+              className="absolute top-[500px] left-[900px]"
+              name="Luna's Cottage"
+              inventory={["2 Garlic Bulbs", "3 artworks", "2 wooden chairs"]}
+            />
 
-                    <House
-                    className="absolute top-[200px] left-[200px]"
-                    name="Niko's Shelter"
-                    inventory={["0 Garlic Bulbs", "8 artworks", "Compost Bin"]}
-                    />
+            <House
+              className="absolute top-[200px] left-[200px]"
+              name="Niko's Shelter"
+              inventory={["0 Garlic Bulbs", "8 artworks", "Compost Bin"]}
+            />
 
-                    <House
-                    className="absolute top-[200px] left-[1100px]"
-                    name="Zara's Hub"
-                    inventory={["6 Garlic Bulbs", "7 Herbal Plants", "2 sticks of butter"]}
-                    />
+            <House
+              className="absolute top-[200px] left-[1100px]"
+              name="Zara's Hub"
+              inventory={[
+                "6 Garlic Bulbs",
+                "7 Herbal Plants",
+                "2 sticks of butter",
+              ]}
+            />
 
-                    <House
-                    className="absolute top-[100px] left-[700px]"
-                    name="Kai's Outpost"
-                    inventory={["9 Garlic Bulbs", "2 knitted rugs", "4 knitted sweaters"]}
-                    />
-
-            </div>
-            <div className="flex flex-col items-center justify-center gap-10 min-h-[100vh] p-8">
+            <House
+              className="absolute top-[100px] left-[700px]"
+              name="Kai's Outpost"
+              inventory={[
+                "9 Garlic Bulbs",
+                "2 knitted rugs",
+                "4 knitted sweaters",
+              ]}
+            />
+          </div>
+          <div className="flex flex-col items-center justify-center gap-10 min-h-[100vh] p-8">
             <h1 className="text-3xl font-bold uppercase text-center">
               TRADING FORUM
             </h1>
-            <form className = "flex  flex-col gap-5 ">
-                    <p >Enter your trade below! You will be contacted with a response by the trader.</p>
-                    <input type = "text" className = " p-4 bg-white" placeholder="Your Name"></input>
-                    <input type = "text" className = " p-4 bg-white" placeholder="Trader's posting name"></input>
-                    <input type = "text" className = "p-4 bg-white" placeholder="Message to trader (Include your desired trade below!)"></input>
-                    <button type = 'submit' className = "bg-[#899D5E] p-4">Enter</button>
-                </form>  
+            <form className="flex  flex-col gap-5 ">
+              <p>
+                Enter your trade below! You will be contacted with a response by
+                the trader.
+              </p>
+              <input
+                type="text"
+                className=" p-4 bg-white"
+                placeholder="Your Name"
+              ></input>
+              <input
+                type="text"
+                className=" p-4 bg-white"
+                placeholder="Trader's posting name"
+              ></input>
+              <input
+                type="text"
+                className="p-4 bg-white"
+                placeholder="Message to trader (Include your desired trade below!)"
+              ></input>
+              <button type="submit" className="bg-[#899D5E] p-4">
+                Enter
+              </button>
+            </form>
           </div>
         </div>
       )}
